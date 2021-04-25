@@ -46,7 +46,7 @@ print("State: {}".format(state))
 print("Action: {}".format(action))
 
 # create environment
-env = Env(world, state)
+env = Env(world, state, actions=action)
 
 # create DMP policy
 policy = BioDiscreteDMPPolicy(action, state, num_basis=num_basis, rate=rate)
